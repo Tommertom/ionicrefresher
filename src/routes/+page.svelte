@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { RefresherCustomEvent, RefresherEventDetail } from '@ionic/core';
 
-	function refresher(ev: RefresherEventDetail) {
+	function refresher(ev: RefresherCustomEvent) {
 		console.log('Refreshed.', ev);
 		setTimeout(() => {
 			ev.target.complete();
